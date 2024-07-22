@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
                 //IMC calculus:
                 val heightQ2 = height * height
                 val result = weight / heightQ2
+
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, result)
+                startActivity(intent)
 
                 println("The IMC is: " + result)
             }
