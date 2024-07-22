@@ -29,7 +29,7 @@ class ResultActivity : AppCompatActivity() {
         } else if (resultShow > 30f && resultShow <= 30.9f) {
             "OBSESIDADE"
         } else {
-            "OBESIDADE GRAVE"
+            "OBESIDADE  "
         }
 
         tvCassification.text = classification.toString()
