@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra(KEY_RESULT_IMC, result)
                 startActivity(intent)
 
-                println("The IMC is: " + result)
+
             }
         }
     }

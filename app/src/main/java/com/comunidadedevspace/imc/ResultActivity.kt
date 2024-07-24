@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -14,6 +15,9 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_result)
+
+        supportActionBar?.hide()
+        window.statusBarColor = Color.parseColor("#87F4B5")
 
         val resultShow = intent.getFloatExtra(KEY_RESULT_IMC, 0f )
         val tvResult = findViewById<TextView>(R.id.tv_result)
@@ -32,7 +36,7 @@ class ResultActivity : AppCompatActivity() {
             "OBESIDADE  "
         }
 
-        tvCassification.text = classification.toString()
+        tvCassification.text = classification
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
