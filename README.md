@@ -3,10 +3,11 @@ App maded in a course to calculate the BMI of the user
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src = "https://github.com/user-attachments/assets/f83ebf48-0e8a-407b-8cb1-d276c20c021f"
-width = 260 /> 
 <img src = "https://github.com/user-attachments/assets/123d019d-57a6-47d4-a894-eff15107dcf4"
 width = 267 />
+<img src = "https://github.com/user-attachments/assets/f83ebf48-0e8a-407b-8cb1-d276c20c021f"
+width = 260 /> 
+
 
 ## Tecnologias
 - Kotlin
