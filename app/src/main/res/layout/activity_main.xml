@@ -21,14 +21,14 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            app:tint="@color/white"
+            app:tint="@color/primary_nightBlue"
             android:layout_width="36dp"
             android:layout_height="36dp"/>
 
         <TextView
             android:text="BMI Calculator"
             android:layout_marginStart="24dp"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_nightBlue"
             android:textStyle="bold"
             android:textSize="24sp"
             android:layout_width="wrap_content"
@@ -40,12 +40,13 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="55dp"
             android:layout_marginTop="8dp"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_nightBlue"
             android:layout_width="wrap_content"
+            android:textStyle="italic"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
-    
+
     <Button
         android:id="@+id/btn_Calculate"
         android:layout_width="match_parent"
@@ -53,18 +54,7 @@
         android:layout_margin="16dp"
         android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        tools:layout_editor_absoluteX="16dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -84,7 +74,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_bg"
             android:drawableEnd="@drawable/ic_weight1"
-            android:hint="Enter your weight in Kg e.g: 70.200"
+            android:hint="What is your weight in Kg?"
             android:inputType="numberDecimal"
             android:maxLength="6" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -106,7 +96,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_bg"
             android:drawableEnd="@drawable/ic_height1"
-            android:hint="Enter your height in Meters e.g: 1.65"
+            android:hint="Whats is your height in meter?"
             android:inputType="numberDecimal"
             android:maxLength="4" />
     </com.google.android.material.textfield.TextInputLayout>
